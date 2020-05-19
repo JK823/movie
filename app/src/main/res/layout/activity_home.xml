@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="activity.HomeActivity">
+
+            <FrameLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_above="@id/bottom_button"
+                android:id="@+id/frame"/>
+
+            <LinearLayout
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:id="@+id/bottom_button"
+                android:background="@color/colorSBlack"
+                android:layout_alignParentBottom="true">
+
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:id="@+id/home"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1">
+
+            <ImageView
+                android:layout_height="20dp"
+                android:layout_width="20dp"
+                android:id="@+id/home_false"
+                android:visibility="gone"
+                android:src="@mipmap/movie_false"
+                android:layout_gravity="center"/>
+
+
+            <LinearLayout
+                android:layout_height="35dp"
+                android:layout_width="match_parent"
+                android:id="@+id/home_true"
+                android:background="@drawable/shape_radio"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:gravity="center"
+                android:visibility="visible"
+                android:backgroundTint="#ffffff"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp">
+
+            <ImageView
+                android:layout_height="20dp"
+                android:layout_width="20dp"
+                android:src="@mipmap/home_movie"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:textColor="@color/colorBlack"
+                android:text="首页"/>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:id="@+id/cinema"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1">
+
+            <ImageView
+                android:layout_height="20dp"
+                android:layout_width="20dp"
+                android:id="@+id/cinema_false"
+                android:visibility="visible"
+                android:src="@mipmap/cinemas_false"
+                android:layout_gravity="center"/>
+
+
+            <LinearLayout
+                android:layout_height="35dp"
+                android:layout_width="match_parent"
+                android:id="@+id/cinema_true"
+                android:background="@drawable/shape_radio"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:backgroundTint="#ffffff"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp">
+
+            <ImageView
+                android:layout_height="20dp"
+                android:layout_width="20dp"
+                android:src="@mipmap/cinemas"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:textColor="@color/colorBlack"
+                android:text="影院"/>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:id="@+id/my"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1">
+
+            <ImageView
+                android:layout_height="20dp"
+                android:layout_width="20dp"
+                android:id="@+id/my_false"
+                android:visibility="visible"
+                android:src="@mipmap/my_false"
+                android:layout_gravity="center"/>
+
+
+            <LinearLayout
+                android:layout_height="35dp"
+                android:layout_width="match_parent"
+                android:id="@+id/my_true"
+                android:background="@drawable/shape_radio"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:backgroundTint="#ffffff"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp">
+
+            <ImageView
+                android:layout_height="20dp"
+                android:layout_width="20dp"
+                android:src="@mipmap/my"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:textColor="@color/colorBlack"
+                android:text="我的"/>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+</RelativeLayout>

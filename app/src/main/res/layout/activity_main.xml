@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/yindaoye"
+    tools:context="activity.MainActivity">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="80dp"
+        android:id="@+id/guide_number"
+        android:textColor="@color/colorWrite"
+        android:padding="15dp"
+        android:text="02"
+        android:textSize="20dp"
+        android:layout_alignParentRight="true"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:id="@+id/button_tiao"
+        android:text="立即开启"
+        android:background="@drawable/yuanj"
+        android:layout_marginLeft="138dp"
+        android:layout_marginBottom="45dp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

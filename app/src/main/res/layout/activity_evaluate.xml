@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp_20"
+    android:background="@color/colorBlack"
+    tools:context=".activity.EvaluateActivity">
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_alignTop="@+id/image_vertical"
+        android:layout_width="match_parent"
+        android:paddingLeft="15dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/left_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/left_back"/>
+
+        <TextView
+            android:id="@+id/titleName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWrite"
+            android:text="写评价"
+            android:textSize="18dp"
+            android:paddingLeft="-35dp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <TextView
+        android:text="svdsbf "
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="18dp"
+        android:paddingLeft="180dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorWrite"
+        android:background="@drawable/background_img"
+        android:id="@+id/movieName"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/score"
+        android:textSize="15dp"
+        android:text="我的评分（10.0）"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/colorWrite"/>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:progressBackgroundTint="@color/colorBlack"
+        android:progressTint="@color/colorWrite"
+        android:rating="5"
+        android:stepSize="0.5"
+        android:numStars="5"/>
+
+    <LinearLayout
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="极差"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:textColor="@color/colorHuiBai" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="较差"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:textColor="@color/colorHuiBai" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="一般"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:textColor="@color/colorHuiBai" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="不错"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:textColor="@color/colorHuiBai" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="极好"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textColor="@color/colorHuiBai" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWrite"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="写下你对此影片的看法吧！"/>
+
+    <EditText
+        android:id="@+id/edit_comment_movie"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="left"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="13dp"
+        android:maxLength="150"
+        android:textSize="15dp"
+        android:textColor="@color/colorHuiBai"
+        android:background="@drawable/recyclerview_item_false"
+        android:backgroundTint="@color/colorGreen"/>
+
+    <TextView
+        android:id="@+id/comment_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0/150"
+        android:textColor="@color/colorWrite"
+        android:layout_gravity="right"
+        android:textSize="15dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="-20dp"/>
+
+    <Button
+        android:id="@+id/btn_comment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15dp"
+        android:background="@drawable/radiobutton_shape"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="@color/colorWrite"
+        android:text="提交"/>
+
+</LinearLayout>

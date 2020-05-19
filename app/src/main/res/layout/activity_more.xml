@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorSBlack"
+    tools:context=".activity.MoreActivity">
+
+    <RelativeLayout
+        android:padding="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/gd_fh"
+            android:src="@mipmap/left_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_15"
+            android:layout_marginLeft="@dimen/dp_20"/>
+
+        <EditText
+            android:id="@+id/edit_ss"
+            android:hint="请输入影片名称："
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:padding="@dimen/dp_5"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/dp_15"
+            android:background="@drawable/yuanj1"
+            android:layout_marginLeft="@dimen/dp_140"
+            android:textColor="@color/colorBlue"
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <com.androidkun.xtablayout.XTabLayout
+        app:xTabTextColor="@color/colorWrite"
+        android:id="@+id/gd_tab"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:xTabIndicatorColor="@color/colorAccent"
+        android:layout_weight="1"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/gd_vp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"/>
+
+</LinearLayout>
